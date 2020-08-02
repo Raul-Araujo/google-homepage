@@ -81,6 +81,15 @@ main {
 
 }
 
+@media (min-width:600px){
+    main {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 300px;
+    }
+}
+
 
 form{
     display:flex;
