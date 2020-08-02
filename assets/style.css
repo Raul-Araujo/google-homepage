@@ -57,6 +57,11 @@ nav{
     padding: 7px;
     text-decoration: underline;
 }
+@media (max-width: 361px){
+    .top-options {
+        visibility: hidden;
+    }
+}
 
 /* Setting of all ANCHOR tag */
 
@@ -75,6 +80,8 @@ main {
     margin-top: 100px;
 
 }
+
+
 form{
     display:flex;
     flex-direction: column;
@@ -84,6 +91,7 @@ form{
 #search-box{
     border-radius:25px;
     height:30px; 
+    width:100%;
     border: 1px solid #dfe1e5;
 }
 
@@ -114,7 +122,6 @@ button-group {
 .buttons{
     background-color: #e2d7d7c9;
     border: 1px solid #e2d7d7c9;
-    border: transparent;
     font-size: 14px;
     color: #222;
     opacity: 0.7;
@@ -146,12 +153,11 @@ footer{
     position:fixed;
     bottom:0;
     left:0;
-    margin-right: 10px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     opacity: 0.70;
     background-color: #e2d7d7c9;
-    width:100%;
+    width: 100%;
 }
 #bottom-left-options{
     display: flex;
@@ -159,18 +165,39 @@ footer{
     list-style-type: none;
 
 }
+@media (max-width: 600px){
+    #bottom-left-options{
+     display: flex;
+    flex-direction: column;
+    }
+}
 #bottom-right-options{
     display: flex;
     flex-direction: row;
     list-style-type: none;
     position:fixed;
     right: 7px;
-
+}
+@media (max-width: 600px){
+    #bottom-right-options{
+     display: flex;
+    flex-direction: column;
+    }
 }
 .bottom-options{
     margin-left:27px;
     padding: 0;
     border:0;
+}
+@media (max-width: 600px){
+    .bottom-options{
+        margin-right: 27px;
+    }
+}
+@media (max-width: 290px){
+    .bottom-options{
+    visibility:collapse;
+    }
 }
 .bottom-options:hover{
     text-decoration:underline;
