@@ -82,7 +82,7 @@ main {
 }
 
 @media (max-width:600px){
-    main {
+    #main-content {
     display:flex;
     flex-direction: column;
     align-items: center;
